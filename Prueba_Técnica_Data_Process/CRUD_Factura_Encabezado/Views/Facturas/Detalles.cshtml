@@ -97,11 +97,8 @@
         <div class="col-9 d-flex justify-content-start">
             <form asp-action="Exportar">
                 <input type="hidden" asp-for="Id" />
-                <input type="submit" value="ExportarXML Prueba" class="btn btn-danger" />
+                <input type="submit" value="Exportar XML" onclick="Alerta()" class="btn btn-danger" />
             </form>
-        </div>
-        <div class="col-9">
-
         </div>
 
         <div class="col-3 d-flex justify-content-end fw-bold">
@@ -110,3 +107,8 @@
     </div>
 </div>
 
+<script type="text/javascript">
+    function Alerta(){
+        alert("Archivo generado");
+    }
+</script>

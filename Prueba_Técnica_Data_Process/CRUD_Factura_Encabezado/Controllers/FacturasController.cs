@@ -9,6 +9,8 @@ using CRUD_Factura_Encabezado.Models.Negocio;
 using System.Runtime.CompilerServices;
 using CRUD_Factura_Encabezado.Models.Entidades;
 using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
 
 namespace CRUD_Factura_Encabezado.Controllers
 {

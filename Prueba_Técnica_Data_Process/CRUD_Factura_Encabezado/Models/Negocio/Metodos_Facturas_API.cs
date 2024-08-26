@@ -179,18 +179,9 @@ namespace CRUD_Factura_Encabezado.Models.Negocio
             XmlAttribute efectoComprobante = docXML.CreateAttribute("EfectoComprobante");
             efectoComprobante.Value = oEncabezado.IdEfectoComprobanteNavigation.NombreEfectoComprobante;
             rootNode.Attributes.Append(efectoComprobante);
+            string fechaActual = DateTime.Now.ToString("yyyy-MM-ddTHHmmss");
+            docXML.Save($"{oEncabezado.Emisor}_{fechaActual}.xml");
 
-            docXML.Save($"{oEncabezado.Emisor}.xml");
-
-            ////Crear el Serealizador
-            //XmlSerializer serializer = new XmlSerializer(typeof(Encabezado), new XmlRootAttribute("Factura"));
-            ////Crear Objeto a Serealizar
-
-            ///* Crear un StreamWriter para escribir*/
-            //StreamWriter archivo = new StreamWriter(emisor, false, Encoding.UTF8);
-            //// Serializar usando el StreamWriter.
-            //serializer.Serialize(archivo, oEncabezado);
-            //archivo.Close();
-        }
+         }
     }
 }
