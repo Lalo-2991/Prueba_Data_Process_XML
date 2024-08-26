@@ -1,0 +1,107 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model CRUD_Factura_Encabezado.Models.Entidades.Encabezado
+@{
+}
+
+<h2>Eliminar factura</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("Id", "Id: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(model => model.Id)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("Factura", "Factura: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.Factura)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("Emisor", "Emisor: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.Emisor)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("FolioFiscal", "Folio Fiscal: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.FolioFiscal)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("FechaEmision", "Fecha de Emisión: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.FechaEmision)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("FechaCertificacion", "Fecha de Certificación: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.FechaCertificacion)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("LugarExpedicion", "Lugar de expedición: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.LugarExpedicion)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("IdMetodoPago", "Método de pago: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.IdMetodoPagoNavigation.NombreMetodoPago)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("NombreFormaPago", "Forma de pago: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.IdFormaPagoNavigation.NombreFormaPago)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("NombreMoneda", "Moneda: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.IdMonedaNavigation.NombreMoneda)
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.Label("NombreEfectoComprobante", "Efecto Comprobante: ")
+        </div>
+        <div class="col-9 d-flex justify-content-start">
+            @Html.DisplayFor(m => m.IdEfectoComprobanteNavigation.NombreEfectoComprobante)
+        </div>
+
+        @{
+            string enlaceEliminar = $"../ConfirmarEliminacion/{Model.Id}";
+        }
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            <form asp-action="ConfirmacionEliminar">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Eliminar" class="btn btn-danger" />
+            </form>
+        </div>
+
+        <div class="col-9">
+        </div>
+
+        <div class="col-3 d-flex justify-content-end fw-bold">
+            @Html.ActionLink("Regresar a Listado de Facturas", "Index")
+        </div>
+    </div>
+</div>
