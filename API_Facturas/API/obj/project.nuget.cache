@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/RWH49cwYC0=",
+  "dgSpecHash": "TNbiwWjEDvE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\API_Facturas\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\API_Facturas\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -4,6 +4,7 @@ using System.Net.Http.Headers;
 using NuGet.Configuration;
 using CRUD_Factura_Encabezado.Models.Entidades;
 using System.Xml.Serialization;
+using System.Xml;
 
 namespace CRUD_Factura_Encabezado.Models.Negocio
 {
@@ -105,7 +106,7 @@ namespace CRUD_Factura_Encabezado.Models.Negocio
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -118,31 +119,78 @@ namespace CRUD_Factura_Encabezado.Models.Negocio
                 {
                     HttpContent EncabezadoString = new StringContent(JsonConvert.SerializeObject(oEncabezado), Encoding.UTF8);
                     EncabezadoString.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                    var responseTask = await client.PutAsync($"{_webAPIFacturas}/{id}",EncabezadoString);
-                    if (!responseTask.IsSuccessStatusCode) 
+                    var responseTask = await client.PutAsync($"{_webAPIFacturas}/{id}", EncabezadoString);
+                    if (!responseTask.IsSuccessStatusCode)
                     {
                         throw new Exception($"Web API. Error. {responseTask.StatusCode}");
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-        
+
         }
 
-        //public void ExportarAXML(string emisor, Encabezado oEncabezado)
-        //{
-        //    //Crear el Serealizador
-        //    XmlSerializer serializer = new XmlSerializer(typeof(Encabezado), new XmlRootAttribute("Factura"));
-        //    //Crear Objeto a Serealizar
+        public void ExportarAXML(Encabezado oEncabezado)
+        {
+            XmlDocument docXML = new XmlDocument();
+            XmlNode rootNode = docXML.CreateElement("cfdi:Comprobante");
+            docXML.AppendChild(rootNode);
 
-        //    /* Crear un StreamWriter para escribir*/
-        //    StreamWriter archivo = new StreamWriter(emisor, false, Encoding.UTF8);
-        //    // Serializar usando el StreamWriter.
-        //    serializer.Serialize(archivo, oEncabezado);
-        //    archivo.Close();
-        //}
+
+            XmlAttribute factura = docXML.CreateAttribute("Factura");
+            factura.Value = oEncabezado.Factura;
+            rootNode.Attributes.Append(factura);
+
+            XmlAttribute emisor = docXML.CreateAttribute("Emisor");
+            emisor.Value = oEncabezado.Emisor;
+            rootNode.Attributes.Append(emisor);
+
+            XmlAttribute folioFiscal = docXML.CreateAttribute("FolioFiscal");
+            folioFiscal.Value = oEncabezado.FolioFiscal;
+            rootNode.Attributes.Append(folioFiscal);
+
+            XmlAttribute fechaEmision = docXML.CreateAttribute("FechaEmision");
+            fechaEmision.Value = oEncabezado.FechaEmision.ToString();
+            rootNode.Attributes.Append(fechaEmision);
+
+            XmlAttribute fechaCertificacion = docXML.CreateAttribute("FechaCertificacion");
+            fechaCertificacion.Value = oEncabezado.FechaCertificacion.ToString();
+            rootNode.Attributes.Append(fechaCertificacion);
+
+            XmlAttribute lugarExpedicion = docXML.CreateAttribute("LugarExpedicion");
+            lugarExpedicion.Value = oEncabezado.LugarExpedicion.ToString();
+            rootNode.Attributes.Append(lugarExpedicion);
+
+            XmlAttribute metodoPago = docXML.CreateAttribute("MetodoPago");
+            metodoPago.Value = oEncabezado.IdMetodoPagoNavigation.NombreMetodoPago;
+            rootNode.Attributes.Append(metodoPago);
+
+            XmlAttribute formaPago = docXML.CreateAttribute("FormaPago");
+            formaPago.Value = oEncabezado.IdFormaPagoNavigation.NombreFormaPago;
+            rootNode.Attributes.Append(formaPago);
+
+            XmlAttribute moneda = docXML.CreateAttribute("Moneda");
+            moneda.Value = oEncabezado.IdMonedaNavigation.NombreMoneda;
+            rootNode.Attributes.Append(moneda);
+
+            XmlAttribute efectoComprobante = docXML.CreateAttribute("EfectoComprobante");
+            efectoComprobante.Value = oEncabezado.IdEfectoComprobanteNavigation.NombreEfectoComprobante;
+            rootNode.Attributes.Append(efectoComprobante);
+
+            docXML.Save($"{oEncabezado.Emisor}.xml");
+
+            ////Crear el Serealizador
+            //XmlSerializer serializer = new XmlSerializer(typeof(Encabezado), new XmlRootAttribute("Factura"));
+            ////Crear Objeto a Serealizar
+
+            ///* Crear un StreamWriter para escribir*/
+            //StreamWriter archivo = new StreamWriter(emisor, false, Encoding.UTF8);
+            //// Serializar usando el StreamWriter.
+            //serializer.Serialize(archivo, oEncabezado);
+            //archivo.Close();
+        }
     }
 }

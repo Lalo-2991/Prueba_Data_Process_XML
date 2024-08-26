@@ -1,12 +1,88 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\Prueba_T\u00E9cnica_Data_Process\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_T\u00E9cnica_Data_Process\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|c:\\users\\hp\\documents\\data_process\\prueba_data_process_xml\\prueba_t\u00E9cnica_data_process\\crud_factura_encabezado\\models\\negocio\\metodos_facturas_api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|solutionrelative:crud_factura_encabezado\\models\\negocio\\metodos_facturas_api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|c:\\users\\hp\\documents\\data_process\\prueba_data_process_xml\\prueba_t\u00E9cnica_data_process\\crud_factura_encabezado\\controllers\\facturascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|solutionrelative:crud_factura_encabezado\\controllers\\facturascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|c:\\users\\hp\\documents\\data_process\\prueba_data_process_xml\\prueba_t\u00E9cnica_data_process\\crud_factura_encabezado\\views\\facturas\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|solutionrelative:crud_factura_encabezado\\views\\facturas\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|c:\\users\\hp\\documents\\data_process\\prueba_data_process_xml\\prueba_t\u00E9cnica_data_process\\crud_factura_encabezado\\models\\entidades\\encabezado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7898560C-E96D-4DD5-B5E8-E7838C01849F}|CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj|solutionrelative:crud_factura_encabezado\\models\\entidades\\encabezado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Encabezado.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Models\\Entidades\\Encabezado.cs",
+              "RelativeDocumentMoniker": "CRUD_Factura_Encabezado\\Models\\Entidades\\Encabezado.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Models\\Entidades\\Encabezado.cs",
+              "RelativeToolTip": "CRUD_Factura_Encabezado\\Models\\Entidades\\Encabezado.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwCAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T17:53:56.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Detalles.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Facturas\\Detalles.cshtml",
+              "RelativeDocumentMoniker": "CRUD_Factura_Encabezado\\Views\\Facturas\\Detalles.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Views\\Facturas\\Detalles.cshtml",
+              "RelativeToolTip": "CRUD_Factura_Encabezado\\Views\\Facturas\\Detalles.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T17:34:45.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Metodos_Facturas_API.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Models\\Negocio\\Metodos_Facturas_API.cs",
+              "RelativeDocumentMoniker": "CRUD_Factura_Encabezado\\Models\\Negocio\\Metodos_Facturas_API.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Models\\Negocio\\Metodos_Facturas_API.cs",
+              "RelativeToolTip": "CRUD_Factura_Encabezado\\Models\\Negocio\\Metodos_Facturas_API.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAmwIgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T17:21:36.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FacturasController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Controllers\\FacturasController.cs",
+              "RelativeDocumentMoniker": "CRUD_Factura_Encabezado\\Controllers\\FacturasController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_T\u00E9cnica_Data_Process\\CRUD_Factura_Encabezado\\Controllers\\FacturasController.cs",
+              "RelativeToolTip": "CRUD_Factura_Encabezado\\Controllers\\FacturasController.cs",
+              "ViewState": "AQIAANYAAAAAAAAAAAAYwOIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T17:20:33.489Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

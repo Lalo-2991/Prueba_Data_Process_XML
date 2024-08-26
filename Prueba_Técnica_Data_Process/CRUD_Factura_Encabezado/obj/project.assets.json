@@ -10817,11 +10817,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\Prueba_Técnica_Data_Process\\CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_Técnica_Data_Process\\CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj",
       "projectName": "CRUD_Factura_Encabezado",
-      "projectPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\Prueba_Técnica_Data_Process\\CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj",
+      "projectPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_Técnica_Data_Process\\CRUD_Factura_Encabezado\\CRUD_Factura_Encabezado.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\Prueba_Técnica_Data_Process\\CRUD_Factura_Encabezado\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\Prueba_Técnica_Data_Process\\CRUD_Factura_Encabezado\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

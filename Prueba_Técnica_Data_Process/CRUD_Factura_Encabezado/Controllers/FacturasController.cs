@@ -212,22 +212,25 @@ namespace CRUD_Factura_Encabezado.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // POST: Facturas/Delete/5
-        //[HttpPost, ActionName("Exportar")]
-        //[ValidateAntiForgeryToken]
-        //public async Task Exportar(int id )
-        //{
-        //    try
-        //    {
-        //        Encabezado oFactura = await _metodosFacturas_API.Consultar(id);
-        //        string Emisor = oFactura.Emisor;
-        //        _metodosFacturas_API.ExportarAXML(@"..\Models\AlumnosSer1.xml", oFactura);
-        //    }
-        //    catch
-        //    {
-        //        throw new Exception("Error en Serialización");
-        //    }
-        //   RedirectToAction(nameof(Index));
-        //}
+
+        [ActionName("Exportar")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Exportar(int id)
+        {
+            try
+            {
+                Encabezado oFactura = await _metodosFacturas_API.Consultar(id);
+                oFactura.IdEfectoComprobanteNavigation = await _metodosEfectoComprobante_API.Consultar(oFactura.IdEfectoComprobante);
+                oFactura.IdFormaPagoNavigation = await _metodosFormaPago_API.Consultar(oFactura.IdFormaPago);
+                oFactura.IdMetodoPagoNavigation = await _metodosMetodoPago_API.Consultar(oFactura.IdMetodoPago);
+                oFactura.IdMonedaNavigation = await _metodosMoneda_API.Consultar(oFactura.IdMoneda);
+                _metodosFacturas_API.ExportarAXML(oFactura);
+            }
+            catch
+            {
+                throw new Exception("Error en Serialización");
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

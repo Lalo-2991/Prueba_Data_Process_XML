@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\API_Facturas\\API\\API.csproj": {}
+    "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\API_Facturas\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\API_Facturas\\API\\API.csproj": {
+    "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\API_Facturas\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\API_Facturas\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\API_Facturas\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\API_Facturas\\API\\API.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\API_Facturas\\API\\API.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_API\\API_Facturas\\API\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\Data_Process\\Prueba_Data_Process_XML\\API_Facturas\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
