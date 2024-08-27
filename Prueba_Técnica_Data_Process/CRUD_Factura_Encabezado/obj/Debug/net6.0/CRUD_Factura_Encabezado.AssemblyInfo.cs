@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUD_Factura_Encabezado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a134f527531f9f23dba5f6232423e26abfab8f00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3bf88b9a116a7808af7981f2b0c2cd56b7165a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUD_Factura_Encabezado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUD_Factura_Encabezado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
